@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+<title>Orzeł czy reszka?</title>
+</head>
+
+<body>
+<button onclick="losowanie()">Losuj</button>
+<div class="wynik"></div>
+
+<script> function losowanie() { 
+var losowanie = Math.round(Math.random()); 
+var wynik = document.querySelector('.wynik'); 
+if(losowanie === 0) 
+{ wynik.innerHTML = 'orzeł'; } 
+else 
+{ wynik.innerHTML = 'reszka'; } 
+} </script> 
+
+</body> 
+
+</html>
